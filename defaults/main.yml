@@ -2,26 +2,27 @@
 
 ---
 discourse:
-  apt_repositories:
-    - ppa:git-core/ppa
-    - ppa:rwky/redis
+  common:
+    apt_repositories:
+      - ppa:git-core/ppa
+      - ppa:rwky/redis
 
-  apt_packages:
-    - build-essential
-    - curl
-    - gawk
-    - git
-    - imagemagick
-    - libpq-dev
-    - libssl-dev
-    - libtool
-    - libxml2-dev
-    - libxslt-dev
-    - libyaml-dev
-    - nginx
-    - pngcrush
-    - postfix
-    - postgresql-server
+    apt_packages:
+      - build-essential
+      - curl
+      - gawk
+      - git
+      - imagemagick
+      - libpq-dev
+      - libssl-dev
+      - libtool
+      - libxml2-dev
+      - libxslt-dev
+      - libyaml-dev
+      - nginx
+      - pngcrush
+      - postfix
+      - postgresql-server
 
   users:
     users:
