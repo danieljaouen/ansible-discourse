@@ -29,6 +29,7 @@ discourse:
       - pngcrush
       - postfix
       - postgresql-server
+      - redis-server
 
     directories:
       - /var/www/discourse
