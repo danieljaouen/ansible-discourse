@@ -35,3 +35,7 @@ discourse:
       - name: /var/www/discourse
         owner: discourse
         group: discourse
+
+  python_packages:
+    requirements:
+      - psycopg2

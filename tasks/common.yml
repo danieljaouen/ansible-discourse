@@ -19,6 +19,13 @@
   file: name={{ item.name }} state=directory owner={{ item.owner }} group={{ item.group }}
   with_items: discourse.common.directories
 
+- name: common | easy_install pip
+  easy_install: name=pip
+
+- name: common | pip install python_packages.requirements
+  pip: name={{ item }} state=present
+  with_items: discourse.python_packages.requirements
+
 - name: common | createuser discourse
   postgresql_user: name=discourse state=present
 
