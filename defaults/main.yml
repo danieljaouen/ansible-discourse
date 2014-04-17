@@ -1,2 +1,29 @@
+# file: defaults/main.yml
+
 ---
-# defaults file for discourse
+discourse:
+  common:
+    # apt_repositories --------------------------------------------- {{{
+    apt_repositories:
+      - ppa:git-core/ppa
+      - ppa:rwky/redis
+    # /apt_repositories -------------------------------------------- }}}
+
+    # apt_packages ------------------------------------------------- {{{
+    apt_packages:
+      - build-essential
+      - curl
+      - gawk
+      - git
+      - imagemagick
+      - libpq-dev
+      - libssl-dev
+      - libtool
+      - libxml2-dev
+      - libxslt-dev
+      - libyaml-dev
+      - nginx
+      - pngcrush
+      - postfix
+      - postgresql-server
+    # /apt_packages ------------------------------------------------ }}}
