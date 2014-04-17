@@ -1,7 +1,7 @@
 # file: tasks/main.yml
 
 ---
-- name: common | adduser users
+- name: users | adduser users
   user: name={{ item.name }} password={{ item.password_hash }} shell={{ item.shell }}
   sudo: yes
   sudo_user: root

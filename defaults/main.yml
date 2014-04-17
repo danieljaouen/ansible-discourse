@@ -2,6 +2,12 @@
 
 ---
 discourse:
+  users:
+    users:
+      - name: discourse
+        password_hash: $6$kkaegia6LEq1FlFx$MUrbk/JUHV1Ht2AGE2oKEfScjKBwM0fR84jP6i6NWbNnM8qTQqbswBDNZ4SU37YeoujhasDAJE/2TY1xZJJIL/
+        shell: /bin/bash
+
   common:
     apt_repositories:
       - ppa:git-core/ppa
@@ -23,12 +29,6 @@ discourse:
       - pngcrush
       - postfix
       - postgresql-server
-
-  users:
-    users:
-      - name: discourse
-        password_hash: $6$kkaegia6LEq1FlFx$MUrbk/JUHV1Ht2AGE2oKEfScjKBwM0fR84jP6i6NWbNnM8qTQqbswBDNZ4SU37YeoujhasDAJE/2TY1xZJJIL/
-        shell: /bin/bash
 
   common:
     directories:
