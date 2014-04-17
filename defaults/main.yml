@@ -4,7 +4,7 @@
 discourse:
   common:
     # apt_repositories --------------------------------------------- {{{
-    apt_repositories:
+    apt_repos:
       - ppa:git-core/ppa
       - ppa:rwky/redis
     # /apt_repositories -------------------------------------------- }}}
