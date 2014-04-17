@@ -28,7 +28,7 @@ discourse:
       - nginx
       - pngcrush
       - postfix
-      - postgresql-server
+      - postgresql
       - redis-server
 
     directories:
