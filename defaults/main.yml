@@ -33,5 +33,5 @@ discourse:
 
     directories:
       - name: /var/www/discourse
-        user: discourse
+        owner: discourse
         group: discourse
