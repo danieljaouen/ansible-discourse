@@ -30,6 +30,5 @@ discourse:
       - postfix
       - postgresql-server
 
-  common:
     directories:
       - /var/www/discourse
