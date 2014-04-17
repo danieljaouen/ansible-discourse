@@ -18,3 +18,9 @@
 - name: common | create the Discourse directories
   file: name={{ item.name }} state=directory owner={{ item.owner }} group={{ item.group }}
   with_items: discourse.common.directories
+
+- name: common | createuser discourse
+  postgresql_user: name=discourse state=present
+
+- name: common | install rvm
+  shell: "curl -s -S -L https://get.rvm.io | bash -s stable"
