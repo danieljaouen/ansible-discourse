@@ -1,9 +1,10 @@
 # file: defaults/main.yml
 
 ---
-apt_repositories:
-  - ppa:git-core/ppa
-  - ppa:rwky/redis
+common:
+  apt_repositories:
+    - ppa:git-core/ppa
+    - ppa:rwky/redis
 
 discourse:
   common:
