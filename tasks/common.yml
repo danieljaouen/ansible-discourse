@@ -16,7 +16,5 @@
   with_items: discourse.common.apt_packages
 
 - name: common | create the Discourse directories
-  file: name={{ item }} state=directory
-  sudo: yes
-  sudo_user: discourse
+  file: name={{ item.name }} state=directory owner={{ item.owner }} group={{ item.group }}
   with_items: discourse.common.directories

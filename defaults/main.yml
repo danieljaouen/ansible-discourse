@@ -32,4 +32,6 @@ discourse:
       - redis-server
 
     directories:
-      - /var/www/discourse
+      - name: /var/www/discourse
+        user: discourse
+        group: discourse
