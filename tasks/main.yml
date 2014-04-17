@@ -15,3 +15,14 @@
   apt: name={{ item }} state=present update_cache=yes
   with_items: discourse.common.apt_packages
 
+- name: common | adduser users
+  user: name={{ item.name }} password={{ item.password_hash }} shell={{ item.shell }}
+  sudo: yes
+  sudo_user: root
+  with_items: discourse.users.users
+
+- name: common | create the Discourse directories
+  file: name={{ item }} state=directory
+  sudo: yes
+  sudo_user: discourse
+  with_items: discourse.common.directories

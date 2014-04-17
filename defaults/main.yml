@@ -27,3 +27,18 @@ discourse:
       - postfix
       - postgresql-server
     # /apt_packages ------------------------------------------------ }}}
+
+  users:
+    # users --------------------------------------------------------------- {{{
+    users:
+      - name: discourse
+        password_hash: $6$kkaegia6LEq1FlFx$MUrbk/JUHV1Ht2AGE2oKEfScjKBwM0fR84jP6i6NWbNnM8qTQqbswBDNZ4SU37YeoujhasDAJE/2TY1xZJJIL/
+        shell: /bin/bash
+    # /users -------------------------------------------------------------- }}}
+
+  common:
+    # directories -------------------------------------------------- {{{
+    directories:
+      - /var/www/discourse
+    # /directories ------------------------------------------------- }}}
+
