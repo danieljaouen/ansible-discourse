@@ -28,8 +28,8 @@
 
 - name: common | createuser discourse
   postgresql_user: name=discourse state=present
-  sudo: yes
-  sudo_user: postgres
+  become: yes
+  become_user: postgres
 
 - name: common | install rvm
   shell: "curl -s -S -L https://get.rvm.io | bash -s stable"
