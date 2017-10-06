@@ -1,5 +1,5 @@
 # file: tasks/main.yml
 
 ---
-- include: users.yml
-- include: common.yml
+- import_tasks: users.yml
+- import_tasks: common.yml
