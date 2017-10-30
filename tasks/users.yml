@@ -5,4 +5,4 @@
   user: name={{ item.name }} password={{ item.password_hash }} shell={{ item.shell }}
   become: yes
   become_user: root
-  with_items: discourse.users.users
+  loop: discourse.users.users
